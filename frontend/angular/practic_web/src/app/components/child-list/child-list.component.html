@@ -1,0 +1,8 @@
+<button (click)="createChild()">Create Child</button>
+<input type="text" placeholder="name:" #name (input)="refresh(name.value)" />
+<table>
+    <tr *ngFor="let child of children">
+        <td (dblclick)="updateChild(child.id)">{{child.name}}</td>
+        <td><button (click)="deleteChild(child.id)">Delete</button></td>
+    </tr>
+</table>

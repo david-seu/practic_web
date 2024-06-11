@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\users\\seu21\\documente\\github\\practic_web\\asp\\practicweb\\controllers\\childclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\childclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\controllers\\parentclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\parentclasscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\users\\seu21\\documente\\github\\practic_web\\asp\\practicweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\mapper\\parentclassmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:mapper\\parentclassmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\dto\\parentclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:dto\\parentclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\mapper\\childclassmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:mapper\\childclassmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\dto\\childclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:dto\\childclassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\model\\parentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:model\\parentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\model\\childclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:model\\childclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|c:\\users\\seu21\\documente\\github\\practic_web\\asp\\practicweb\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\model\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:model\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7568EAEA-52A1-415C-B0B3-39CBC8A0E66A}|PracticWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAmwAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:02:05.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParentClassDTO.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\DTO\\ParentClassDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ParentClassDTO.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\DTO\\ParentClassDTO.cs",
+              "RelativeToolTip": "DTO\\ParentClassDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:58:44.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChildClassMapper.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Mapper\\ChildClassMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\ChildClassMapper.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Mapper\\ChildClassMapper.cs",
+              "RelativeToolTip": "Mapper\\ChildClassMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:59:32.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParentClassMapper.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Mapper\\ParentClassMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\ParentClassMapper.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Mapper\\ParentClassMapper.cs",
+              "RelativeToolTip": "Mapper\\ParentClassMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T07:00:12.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParentClassController.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\ParentClassController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ParentClassController.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\ParentClassController.cs",
+              "RelativeToolTip": "Controllers\\ParentClassController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAUwEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:37:07.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChildClassController.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\ChildClassController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChildClassController.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Controllers\\ChildClassController.cs",
+              "RelativeToolTip": "Controllers\\ChildClassController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAUwEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:31:38.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChildClassDTO.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\DTO\\ChildClassDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ChildClassDTO.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\DTO\\ChildClassDTO.cs",
+              "RelativeToolTip": "DTO\\ChildClassDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:57:43.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ParentClass.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\ParentClass.cs",
+              "RelativeDocumentMoniker": "Model\\ParentClass.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\ParentClass.cs",
+              "RelativeToolTip": "Model\\ParentClass.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAUwBcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:13:04.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChildClass.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\ChildClass.cs",
+              "RelativeDocumentMoniker": "Model\\ChildClass.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\ChildClass.cs",
+              "RelativeToolTip": "Model\\ChildClass.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:14:41.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA1wAoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T11:53:04.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dao.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\Dao.cs",
+              "RelativeDocumentMoniker": "Model\\Dao.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Model\\Dao.cs",
+              "RelativeToolTip": "Model\\Dao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:27:44.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T06:28:58.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\seu21\\Documente\\GitHub\\practic_web\\asp\\PracticWeb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-08T06:21:47.036Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
