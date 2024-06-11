@@ -8,7 +8,7 @@ import { Observable } from "rxjs";
     }
     )
 export class LoginService {
-    private apiUrl = 'http://localhost/practic_web/users-files/'; // replace with your API endpoint
+    private apiUrl = 'http://localhost/practic_web/'; // replace with your API endpoint
 
     constructor(private http: HttpClient) { }
 

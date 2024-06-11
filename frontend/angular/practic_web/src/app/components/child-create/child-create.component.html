@@ -3,5 +3,11 @@
         Name:
         <input [(ngModel)]="child.name" name="name" required>
     </label>
+    <label>
+        Parent:
+        <select [(ngModel)]="child.p_id" name="p_id" required>
+            <option *ngFor="let parent of parents" [value]="parent.p_id">{{parent.name}}</option>
+        </select>
+    </label>
     <button type="submit">Create</button>
 </form>

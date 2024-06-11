@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
     styleUrls: ['./parent-create.component.css']
 })
 export class ParentCreateComponent {
-    parent = { name: '' };
+    parent = { name: '', u_id: '' };
 
     constructor(private parentService: ParentService, private router: Router) { }
 
@@ -19,6 +19,7 @@ export class ParentCreateComponent {
         if (sessionStorage.getItem("user") == null) {
             this.router.navigate([' ']);
         }
+        this.parent.u_id = sessionStorage.getItem("user")!;
     }
 
     createParent(): void {

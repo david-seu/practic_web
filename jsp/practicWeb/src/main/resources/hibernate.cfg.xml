@@ -24,6 +24,7 @@
         <property name="hbm2ddl.auto">update</property>
 
         <!-- Names the annotated entity class -->
+        <mapping class="david_seu.practicweb.model.User"/>
         <mapping class="david_seu.practicweb.model.Parent"/>
         <mapping class="david_seu.practicweb.model.Child"/>
     </session-factory>

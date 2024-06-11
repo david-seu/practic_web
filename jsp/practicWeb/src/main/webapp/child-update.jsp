@@ -10,7 +10,7 @@
             }
             const urlParams = new URLSearchParams(window.location.search);
             const childId = urlParams.get('id');
-            fetch('/practicWeb_war_exploded/child?id=' + childId)
+            fetch('/practicWeb_war_exploded/child?type=one&id=' + childId)
                 .then(response => response.json())
                 .then(child => {
                     document.getElementById('id').value = child.id;
@@ -26,7 +26,7 @@
                 for (const [key, value]  of formData.entries()) {
                     jsonObject[key] = value;
                 }
-                fetch(form.action, {
+                fetch(form.action + '?type=one', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

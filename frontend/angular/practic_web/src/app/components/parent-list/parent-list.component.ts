@@ -19,8 +19,8 @@ export class ParentListComponent implements OnInit {
         if (sessionStorage.getItem("user") == null) {
             this.router.navigate([' ']);
         }
-        this.refresh('');
         this.parentService.getParents().subscribe(parents => {
+            console.log(parents);
             this.parents = parents;
         });
     }
@@ -34,24 +34,37 @@ export class ParentListComponent implements OnInit {
     refreshFrontend(name: string): void {
         this.parentService.getParents().subscribe(parents => {
             this.parents = parents;
-
+            console.log(this.parents);
+            console.log(name);
             if (name) {
-                this.parents = this.parents.filter(parent => parent.name === name);
+                //to contain only the parent that contain the name
+                this.parents = this.parents.filter(parent => parent.name.toLowerCase().includes(name.toLowerCase()));
             }
         });
     }
 
     createParent(): void {
-        this.router.navigate(['/create-parent']);
+        this.router.navigate(['/parent-create']);
+    }
+
+    createParentMany(): void {
+        this.router.navigate(['/parent-create-many']);
     }
 
     updateParent(id: string): void {
-        this.router.navigate(['/update-parent', id]);
+        this.router.navigate(['/parent-update', id]);
     }
 
     deleteParent(id: string): void {
-        this.parentService.deleteParent(id).subscribe(() => {
-            this.parents = this.parents.filter(parent => parent.id !== id);
+        this.parentService.deleteParent(id).subscribe((thing: any) => {
+            console.log(thing);
+            // remove the deleted parent from the list
+            this.refreshFrontend('');
         });
+    }
+
+    logout(): void {
+        sessionStorage.clear();
+        this.router.navigate([' ']);
     }
 }

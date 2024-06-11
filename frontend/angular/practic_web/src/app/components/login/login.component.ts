@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
 
     login(username: string, password: string) {
         this.service.login(username, password).subscribe((thing: null) => {
+            console.log(thing)
             if (thing != null) {
                 sessionStorage.setItem("user", thing["id"])
                 this.router.navigate(['parent-list']).then(_ => { });
@@ -27,6 +28,7 @@ export class LoginComponent implements OnInit {
 
     register(username: string, password: string) {
         this.service.register(username, password).subscribe((thing: null) => {
+            console.log(thing)
             if (thing != null) {
                 sessionStorage.setItem("user", thing["id"])
                 this.router.navigate(['parent-list']).then(_ => { });

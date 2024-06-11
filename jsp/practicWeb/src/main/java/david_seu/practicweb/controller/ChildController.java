@@ -37,12 +37,12 @@ public class ChildController extends HttpServlet {
             case "one":
                 String id = req.getParameter("id");
                 Child child = childDao.find(Long.parseLong(id));
-                String childJson = gson.toJson(child);
+                String childJson = gson.toJson(ChildMapper.toDto(child));
                 resp.getWriter().write(childJson);
                 break;
             case "all": {
                 List<Child> children = childDao.findAll();
-                String childrenJson = gson.toJson(children);
+                String childrenJson = gson.toJson(children.stream().map(ChildMapper::toDto).collect(Collectors.toList()));
                 resp.getWriter().write(childrenJson);
                 break;
             }
@@ -80,7 +80,7 @@ public class ChildController extends HttpServlet {
         // Create a new Child
         Gson gson = new Gson();
         String type = req.getParameter("type");
-        if(type.equals("one")) {
+        if(type != null && type.equals("one")) {
             try {
                 ChildDto childDto = gson.fromJson(req.getReader(), ChildDto.class);
                 Parent parent = parentDao.find(childDto.getParentId());

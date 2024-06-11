@@ -6,38 +6,38 @@ import { Observable } from 'rxjs';
     providedIn: 'root'
 })
 export class ChildService {
-    private apiUrl = 'http://localhost:3000/children'; // replace with your API endpoint
+    private apiUrl = 'http://localhost/practic_web'; // replace with your API endpoint
 
     constructor(private http: HttpClient) { }
 
     // Create
     createChild(child: any): Observable<any> {
-        return this.http.post<any>(this.apiUrl, child);
+        return this.http.post<any>(this.apiUrl + '/addChild.php', child);
     }
 
     // Read
     getChild(id: string): Observable<any> {
-        return this.http.get<any>(`${this.apiUrl}/${id}`);
+        return this.http.get<any>(`${this.apiUrl}/getChildById.php?c_id=${id}`);
     }
 
     // Update
     updateChild(id: string, child: any): Observable<any> {
-        return this.http.put<any>(`${this.apiUrl}/${id}`, child);
+        return this.http.post<any>(`${this.apiUrl}/updateChild.php`, child);
     }
 
     // Delete
     deleteChild(id: string): Observable<any> {
-        return this.http.delete<any>(`${this.apiUrl}/${id}`);
+        return this.http.get<any>(`${this.apiUrl}/removeChild.php?c_id=${id}`);
     }
 
     // List
     getChildren(): Observable<any[]> {
-        return this.http.get<any[]>(this.apiUrl);
+        return this.http.get<any[]>(this.apiUrl + '/showChilds.php');
     }
 
     // List by name
     getChildrenByName(name: string): Observable<any[]> {
-        return this.http.get<any[]>(`${this.apiUrl}?name=${name}`);
+        return this.http.get<any[]>(`${this.apiUrl}/getAllChildrenByName?name=${name}`);
     }
 
     // List by parent id
@@ -52,6 +52,6 @@ export class ChildService {
 
     // Add many children
     addManyChildren(children: any[]): Observable<any> {
-        return this.http.post<any>(`${this.apiUrl}/addMany`, children);
+        return this.http.post<any>(`${this.apiUrl}/addManyChildren.php`, children);
     }
 }

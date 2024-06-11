@@ -43,14 +43,14 @@ public class ParentController extends HttpServlet {
             case "one": {
                 String id = req.getParameter("id");
                 Parent parent = parentDao.find(Long.parseLong(id));
-                String parentJson = gson.toJson(parent);
+                String parentJson = gson.toJson(ParentMapper.toDto(parent));
                 resp.getWriter().write(parentJson);
                 break;
             }
             case "all-by-user": {
                 String userId = req.getParameter("userId");
                 List<Parent> parents = parentDao.findAllByUserId(Long.parseLong(userId));
-                String parentsJson = gson.toJson(parents);
+                String parentsJson = gson.toJson(parents.stream().map(ParentMapper::toDto).collect(Collectors.toList()));
                 resp.getWriter().write(parentsJson);
                 break;
             }
@@ -80,7 +80,7 @@ public class ParentController extends HttpServlet {
         // Create a new Parent
         Gson gson = new Gson();
         String type = req.getParameter("type");
-        if(type.equals("one")){
+        if(type != null && type.equals("one")){
             try {
                 ParentDto parentDto = gson.fromJson(req.getReader(), ParentDto.class);
                 User user = userDao.find(parentDto.getUserId());

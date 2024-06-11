@@ -19,7 +19,6 @@ export class ChildListComponent implements OnInit {
         if (sessionStorage.getItem("user") == null) {
             this.router.navigate([' ']);
         }
-        this.refresh('');
         this.childService.getChildren().subscribe(children => {
             this.children = children;
         });
@@ -34,9 +33,11 @@ export class ChildListComponent implements OnInit {
     refreshFrontend(name: string): void {
         this.childService.getChildren().subscribe(children => {
             this.children = children;
-
+            console.log(this.children);
+            console.log(name);
             if (name) {
-                this.children = this.children.filter(child => child.name === name);
+                //to contain only the child that contain the name
+                this.children = this.children.filter(child => child.name.toLowerCase().includes(name.toLowerCase()));
             }
         });
     }
@@ -44,16 +45,25 @@ export class ChildListComponent implements OnInit {
 
 
     createChild(): void {
-        this.router.navigate(['/create-child']);
+        this.router.navigate(['/child-create']);
+    }
+
+    createChildMany(): void {
+        this.router.navigate(['/child-create-many']);
     }
 
     updateChild(id: string): void {
-        this.router.navigate(['/update-child', id]);
+        this.router.navigate(['/child-update', id]);
     }
 
     deleteChild(id: string): void {
         this.childService.deleteChild(id).subscribe(() => {
-            this.children = this.children.filter(child => child.id !== id);
+            this.refreshFrontend('');
         });
+    }
+
+    logout(): void {
+        sessionStorage.removeItem("user");
+        this.router.navigate(['']);
     }
 }

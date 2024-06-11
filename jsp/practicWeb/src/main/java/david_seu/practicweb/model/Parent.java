@@ -13,6 +13,7 @@ import org.hibernate.annotations.OnDeleteAction;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "parents")
 public class Parent {
 
     @Id
@@ -22,14 +23,8 @@ public class Parent {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "childId", referencedColumnName = "id")
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private Child child;
-
-    @ManyToOne
-    @JoinColumn(name = "userId", referencedColumnName = "id")
+    @JoinColumn(name = "userId")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private User user;
 
-    private String children;
 }

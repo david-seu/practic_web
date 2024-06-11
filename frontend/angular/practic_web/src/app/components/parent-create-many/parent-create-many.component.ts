@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 import { ParentService } from '../../service/parent.service';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-parent',
-    templateUrl: './parent.component.html',
-    styleUrls: ['./parent.component.css']
+    templateUrl: './parent-create-many.component.html',
+    styleUrls: ['./parent-create-many.component.css'],
+    standalone: true,
+    imports: [FormsModule, CommonModule]
 })
 export class ParentCreateManyComponent {
-    parents: { name: string, user_id: string }[] = [];
+    parents: { name: string, u_id: string }[] = [];
     parentName = '';
     userId = '';
 
@@ -22,7 +26,7 @@ export class ParentCreateManyComponent {
     constructor(private parentsService: ParentService, private router: Router) { }
 
     saveParent() {
-        this.parents.push({ name: this.parentName, user_id: this.userId });
+        this.parents.push({ name: this.parentName, u_id: this.userId });
         this.parentName = '';
     }
 
@@ -30,6 +34,7 @@ export class ParentCreateManyComponent {
         this.parentsService.addManyParents(this.parents).subscribe(response => {
             console.log(response);
             this.parents = [];
+            this.parentName = '';
         });
     }
 }

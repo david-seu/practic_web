@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
     styleUrls: ['./parent-update.component.css']
 })
 export class ParentUpdateComponent implements OnInit {
-    parent = { name: '' };
+    parent = { name: '', p_id: '' };
     id = "";
 
     constructor(
@@ -25,13 +25,14 @@ export class ParentUpdateComponent implements OnInit {
             this.router.navigate([' ']);
         }
         this.id = this.route.snapshot.params['id'];
+        this.parent.p_id = this.id;
         this.parentService.getParent(this.id).subscribe(parent => {
             this.parent = parent;
         });
     }
 
     updateParent(): void {
-        this.parentService.updateParent(this.id, this.parent).subscribe(() => {
+        this.parentService.updateParent(this.parent).subscribe(() => {
             this.router.navigate(['/parent-list']);
         });
     }

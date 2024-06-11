@@ -29,12 +29,13 @@ public class UserController extends HttpServlet{
         User user = userDao.findByUsername(username);
         if(user == null)
         {
-            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST, "Parent not found");
+            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST, "User not found");
         }
         else
         {
             if(user.getPassword().equals(password)){
                 String parentJson = gson.toJson(user);
+                System.out.println(parentJson);
                 resp.getWriter().write(parentJson);
             }
             else

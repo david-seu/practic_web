@@ -20,6 +20,7 @@
           method: 'GET',
         }).then(response => {
           if (response.ok) {
+            console.log(response);
             response.json().then(data => {
               sessionStorage.setItem('id', data.id);
             });
