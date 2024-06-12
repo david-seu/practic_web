@@ -1,4 +1,7 @@
-﻿namespace PracticWeb.Model
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace PracticWeb.Model
 {
     public class User
     {

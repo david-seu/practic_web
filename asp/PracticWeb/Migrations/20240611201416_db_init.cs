@@ -11,16 +11,37 @@ namespace PracticWeb.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ParentClasses",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ParentClasses", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ParentClasses_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -47,6 +68,11 @@ namespace PracticWeb.Migrations
                 name: "IX_ChildClasses_ParentId",
                 table: "ChildClasses",
                 column: "ParentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ParentClasses_UserId",
+                table: "ParentClasses",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -57,6 +83,9 @@ namespace PracticWeb.Migrations
 
             migrationBuilder.DropTable(
                 name: "ParentClasses");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

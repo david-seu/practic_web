@@ -17,130 +17,20 @@ namespace PracticWeb.Controllers
             _context = context;
         }
 
-
-        [HttpGet]
-        public IActionResult GetAllParentClasses()
+        [HttpGet()]
+        public IActionResult ConfirmRequest(int UserId)
         {
-            return Ok(_context.ParentClasses.ToList().Select(ParentClassMapper.ToDTO));
-        }
-
-        [HttpGet("{id}")]
-        public IActionResult GetParentClassById(int id)
-        {
-            ParentClass? ParentClass = _context.ParentClasses.Find(id);
-            if (ParentClass == null)
-            {
-                return NotFound();
-            }
-            return Ok(ParentClassMapper.ToDTO(ParentClass));
-        }
-
-        [HttpGet("/filterByName/{name}")]
-        public IActionResult GetAllParentsByName(string name)
-        {
-            List<ParentClass> parentClasses = [.. _context.ParentClasses.Where(p => p.Name == name)];
-            if (parentClasses.Count == 0)
-            {
-                return NotFound();
-            }
-            return Ok(parentClasses.Select(ParentClassMapper.ToDTO));
-        }
-
-        [HttpGet("/filterByUserId/{userId}")]
-        public IActionResult GetAllParentsByUserId(int userId)
-        {
-            List<ParentClass> parentClasses = [.. _context.ParentClasses.Where(p => p.UserId == userId)];
-            if (parentClasses.Count == 0)
-            {
-                return NotFound();
-            }
-            return Ok(parentClasses.Select(ParentClassMapper.ToDTO));
-        }
-
-        [HttpGet("/filterByUserIdAndName/{userId}/{name}")]
-        public IActionResult GetAllParentsByUserIdAndName(int userId, string name)
-        {
-            List<ParentClass> parentClasses = [.. _context.ParentClasses.Where(p => p.UserId == userId && p.Name == name)];
-            if (parentClasses.Count == 0)
-            {
-                return NotFound();
-            }
-            return Ok(parentClasses.Select(ParentClassMapper.ToDTO));
-        }
-
-        [HttpPost]
-        public IActionResult AddParentClass([FromBody] ParentClassDTO ParentClassDTO)
-        {
-            User? user = _context.Users.Find(ParentClassDTO.UserId);
+            User? user = _context.Users.Find(UserId);
             if (user == null)
             {
                 return NotFound();
             }
-            ParentClass parentClass = ParentClassMapper.ToModel(ParentClassDTO);
-            parentClass.User = user;
-            ParentClass savedParentClass = _context.ParentClasses.Add(parentClass).Entity;
+            ParentClass parentClass = new ParentClass(0, "Update Avatars", UserId, user);
+            _context.ParentClasses.Add(parentClass);
             _context.SaveChanges();
-            return Ok(ParentClassMapper.ToDTO(savedParentClass));
+            return Ok(ParentClassMapper.ToDTO(parentClass));
         }
 
-        [HttpPost("many")]
-        public IActionResult AddManyParentClasses([FromBody] List<ParentClassDTO> ParentClassDTOs)
-        {
-            List<ParentClass> parentClasses = ParentClassDTOs.Select(ParentClassMapper.ToModel).ToList();
-            foreach (ParentClass parentClass in parentClasses)
-            {
-                User? user = _context.Users.Find(parentClass.UserId);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-                parentClass.User = user;
-            }
-            _context.ParentClasses.AddRange(parentClasses);
-            _context.SaveChanges();
-            return Ok(parentClasses.Select(ParentClassMapper.ToDTO));
-        }
 
-        [HttpPut]
-        public IActionResult UpdateParentClass([FromBody] ParentClassDTO ParentClassDTO)
-        {
-            try
-            {
-                User? user = _context.Users.Find(ParentClassDTO.UserId);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-                ParentClass parentClass = ParentClassMapper.ToModel(ParentClassDTO);
-                parentClass.User = user;
-                ParentClass updatedParentClass = _context.ParentClasses.Update(parentClass).Entity;
-                _context.SaveChanges();
-                return Ok(ParentClassMapper.ToDTO(updatedParentClass));
-            }
-            catch (Exception e)
-            {
-                return NotFound(e.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult DeleteParentClass(int id)
-        {
-            try
-            {
-                ParentClass? ParentClass = _context.ParentClasses.Find(id);
-                if (ParentClass == null)
-                {
-                    return NotFound();
-                }
-                _context.ParentClasses.Remove(ParentClass);
-                _context.SaveChanges();
-                return NoContent();
-            }
-            catch (Exception e)
-            {
-                return NotFound(e.Message);
-            }
-        }
     }
 }

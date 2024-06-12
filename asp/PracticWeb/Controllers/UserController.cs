@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PracticWeb.Mapper;
 using PracticWeb.Model;
 
 namespace PracticWeb.Controllers
@@ -17,7 +18,7 @@ namespace PracticWeb.Controllers
             {
                 return NotFound();
             }
-            return Ok(user);
+            return Ok(UserMapper.ToDTO(user));
         }
 
         [HttpPost]
@@ -25,7 +26,7 @@ namespace PracticWeb.Controllers
         {
             _context.Users.Add(user);
             _context.SaveChanges();
-            return Ok(user);
+            return Ok(UserMapper.ToDTO(user));
         }
     }
 }

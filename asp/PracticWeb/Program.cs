@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PracticWeb.Model;
 
@@ -12,7 +13,7 @@ namespace PracticWeb
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll",
+                options.AddDefaultPolicy(
                     builder =>
                     {
                         builder.AllowAnyOrigin()
@@ -33,6 +34,7 @@ namespace PracticWeb
             builder.Services.AddDbContext<Dao>(options =>
                 options.UseSqlServer(connection));
 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -45,7 +47,9 @@ namespace PracticWeb
             app.UseAuthorization();
 
 
+
             app.MapControllers();
+            app.UseCors();
 
             app.Run();
         }

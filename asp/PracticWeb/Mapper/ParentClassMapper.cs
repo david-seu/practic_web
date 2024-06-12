@@ -7,12 +7,12 @@ namespace PracticWeb.Mapper
     {
         public static ParentClassDTO ToDTO(ParentClass parent)
         {
-            return new ParentClassDTO(parent.Id, parent.Name, parent.UserId);
+            return new ParentClassDTO(parent.Id, parent.Text, parent.UserId);
         }
 
         public static ParentClass ToModel(ParentClassDTO parentDTO)
         {
-            return new ParentClass(parentDTO.Id, parentDTO.Name, parentDTO.UserId);
+            return new ParentClass(parentDTO.Id, parentDTO.Text, parentDTO.UserId);
         }
     }
 }

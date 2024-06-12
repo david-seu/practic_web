@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PracticWeb.Model
 {
+    [Table("Avatar")]
     public class ChildClass
     {
         [Key]
@@ -9,24 +11,19 @@ namespace PracticWeb.Model
 
         public string Name { get; set; }
 
-        public ParentClass Parent { get; set; }
 
-        public int ParentId { get; set; }
+        public string Powers { get; set; }
 
-        public ChildClass(int id, string name, int parentId, ParentClass parent)
+        public int Rank { get; set; }
+        public int Age { get; set; }
+
+        public ChildClass(int id, string name, string powers, int rank, int age)
         {
             Id = id;
             Name = name;
-            ParentId = parentId;
-            Parent = parent;
-        }
-
-        public ChildClass(int id, string name, int parentId)
-        {
-            Id = id;
-            Name = name;
-            ParentId = parentId;
-            Parent = new ParentClass();
+            Powers = powers;
+            Rank = rank;
+            Age = age;
         }
 
 
@@ -34,8 +31,9 @@ namespace PracticWeb.Model
         {
             Id = 0;
             Name = "";
-            ParentId = 0;
-            Parent = new ParentClass();
+            Powers = "";
+            Rank = 0;
+            Age = 0;
         }
     }
 }

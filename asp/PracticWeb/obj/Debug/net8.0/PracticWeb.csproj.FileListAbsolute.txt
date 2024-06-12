@@ -251,3 +251,9 @@ C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\obj\Debug\net8.0\refi
 C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\obj\Debug\net8.0\PracticWeb.pdb
 C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\obj\Debug\net8.0\PracticWeb.genruntimeconfig.cache
 C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\obj\Debug\net8.0\ref\PracticWeb.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\seu21\Documente\GitHub\practic_web\asp\PracticWeb\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
